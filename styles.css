@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: sans-serif;
+    color: white;
 }
 body{
     display: flex;
@@ -14,7 +15,6 @@ img{
 .clock{
     position: absolute;
     font-size: 50px;
-    color: white;
     top: 40%;
 }
 .dock{
@@ -22,7 +22,7 @@ img{
     position: absolute;
     width: 500px;
     height: 75px;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
     opacity: 0.4;
     display: flex;
@@ -33,9 +33,10 @@ img{
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: black;
+    background-color: white;
     border: none;
     transition: 200ms;
+    font-size: 20px;
 }
 .websites:hover{
     transform: scale(1.5);
