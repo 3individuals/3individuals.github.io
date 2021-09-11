@@ -20,7 +20,7 @@ img{
 .dock{
     bottom: 5px;
     position: absolute;
-    width: 500px;
+    width: 750px;
     height: 75px;
     background-color: black;
     border-radius: 10px;
@@ -40,4 +40,35 @@ img{
 }
 .websites:hover{
     transform: scale(1.5);
+}
+.menu_button{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    padding: 5px;
+}
+input{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    transition: 200ms;
+}
+input:hover{
+    transform: scale(1.35);
+}
+.menu{
+    display: none;
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: repeat(8,70px);
+    padding: 20px;
+    width: 250px;
+    height: 550px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border-radius: 15px;
 }
