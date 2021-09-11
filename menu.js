@@ -1,5 +1,4 @@
-window.onload=function(){
-document.getElementById("menu_button").addEventListener("click",function(){
+function menu_button(){
     if (document.querySelector(".menu").style.display=="none"){
     document.getElementById("menu_button").innerText="close"
     document.querySelector(".menu").style.display="grid"
@@ -7,5 +6,4 @@ document.getElementById("menu_button").addEventListener("click",function(){
         document.getElementById("menu_button").innerText="menu"
         document.querySelector(".menu").style.display="none"
     }
-})
 }
