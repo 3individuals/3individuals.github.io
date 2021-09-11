@@ -1,2 +1,3 @@
 # 3individuals.github.io
-A project built upon impulses and false hope
+
+An attempt at a startpage for everyday purposes.
