@@ -1,74 +1,88 @@
-*{
+* {
     margin: 0;
     font-family: sans-serif;
     color: white;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
 }
-img{
+
+img {
     position: fixed;
     width: 100%;
     height: 100%;
 }
-.clock{
+
+.clock {
     position: absolute;
-    font-size: 50px;
+    font-size: 7vh;
     top: 40%;
 }
-.dock{
+
+.dock {
     bottom: 5px;
     position: absolute;
-    width: 750px;
-    height: 75px;
+    width: 800px;
+    height: 70px;
     background-color: black;
     border-radius: 10px;
-    opacity: 0.4;
+    opacity: 0.3;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.websites{
+
+.websites {
+    opacity: 0.5;
     width: 40px;
     height: 40px;
     border-radius: 20px;
     background-color: white;
     border: none;
-    transition: 200ms;
+    transition: 350ms;
     font-size: 20px;
 }
-.websites:hover{
+
+.websites:hover {
     transform: scale(1.5);
 }
-.menu_button{
+
+.menu_button {
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
     top: 15px;
-    right: 10px;
-    border-radius: 15px;
+    right: 15px;
+    border-radius: 5px;
     border: none;
-    color: black;
-    padding: 5px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 7px;
+    font-weight: 500;
 }
-input{
+
+input {
     width: 100px;
     height: 50px;
-    border-radius: 15px;
-    transition: 200ms;
+    border-radius: 7px;
+    transition: 350ms;
 }
-input:hover{
-    transform: scale(1.35);
+
+input:hover {
+    transform: scale(1.1);
 }
-.menu{
+
+.menu {
     display: none;
-    grid-template-columns: repeat(2,150px);
-    grid-template-rows: repeat(8,70px);
-    padding: 20px;
-    width: 250px;
-    height: 550px;
-    background-color: white;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(8, 70px);
+    padding: 10px;
+    width: 230px;
+    height: 540px;
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50px;
     right: 20px;
-    border-radius: 15px;
+    border-radius: 7px;
 }
