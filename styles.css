@@ -7,6 +7,7 @@
 body {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 img {
@@ -85,4 +86,42 @@ input:hover {
     top: 50px;
     right: 20px;
     border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.add_website_menu{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 175px;
+    background-color: white;
+    border-radius: 15px;
+    top: 30%;
+}
+.add_website_button{
+    position: absolute;
+    padding: 5px;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+    bottom: 10px;
+    left: 35%;
+    transition: 350ms;
+}
+.add_website_button:hover{
+    transform: scale(1.1);
+}
+.user_input1, .user_input2{
+    width: 150px;
+    height: 20px;
+    border: none;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+}
+.user_input1{
+    top: 50px;
+}
+.user_input2{
+    top: 90px;
+    
 }
