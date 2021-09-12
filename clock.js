@@ -1,4 +1,4 @@
-setInterval(time, 1000)
+setInterval(time, 60000)
 
 function time() {
     var time = new Date()
