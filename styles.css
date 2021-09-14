@@ -19,11 +19,11 @@ img {
 .clock {
     position: absolute;
     font-size: 7vh;
-    top: 40%;
+    top: 45%;
 }
 
 .dock {
-    bottom: 5px;
+    bottom: 10px;
     position: absolute;
     width: 800px;
     height: 70px;
@@ -71,10 +71,6 @@ input {
     transition: 350ms;
 }
 
-input:hover {
-    transform: scale(1.1);
-}
-
 .menu {
     display: none;
     grid-template-columns: repeat(2, 130px);
@@ -83,32 +79,39 @@ input:hover {
     width: 230px;
     height: 540px;
     background-color: rgba(0, 0, 0, 0.2);
+    color: teal;
     position: absolute;
     top: 50px;
     right: 20px;
     border-radius: 7px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
 }
 
 .add_website_menu {
     display: none;
     position: absolute;
     width: 400px;
-    height: 175px;
-    background-color: white;
-    border-radius: 15px;
-    top: 30%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    color: teal;
+    top: 25%;
+    border-radius: 7px;
+    backdrop-filter: blur(7px);
 }
 
 .add_website_button {
     position: absolute;
     padding: 5px;
-    background-color: black;
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
     border: none;
+    color: rgb(200, 200, 200);
     bottom: 10px;
-    left: 35%;
+    left: 37%;
     transition: 350ms;
+    font-weight: 500;
+    font-size: medium;
 }
 
 .add_website_button:hover {
@@ -120,15 +123,19 @@ input:hover {
     width: 150px;
     height: 20px;
     border: none;
-    background-color: black;
+    padding-left: 8px;
+    color: rgb(200, 200, 200);
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
-    left: 50%;
+    left: 52%;
 }
 
 .user_input1 {
-    top: 50px;
+    top: 52px;
+    font-size: 14px;
 }
 
 .user_input2 {
-    top: 90px;
+    top: 102px;
+    font-size: 14px;
 }
