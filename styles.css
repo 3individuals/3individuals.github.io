@@ -29,18 +29,19 @@ img {
     height: 70px;
     background-color: black;
     border-radius: 10px;
-    opacity: 0.3;
+    opacity: 0.4;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
 }
 
 .websites {
-    opacity: 0.5;
+    opacity: 1;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     transition: 350ms;
     font-size: 20px;
@@ -88,7 +89,8 @@ input:hover {
     border-radius: 7px;
     backdrop-filter: blur(10px);
 }
-.add_website_menu{
+
+.add_website_menu {
     display: none;
     position: absolute;
     width: 400px;
@@ -97,7 +99,8 @@ input:hover {
     border-radius: 15px;
     top: 30%;
 }
-.add_website_button{
+
+.add_website_button {
     position: absolute;
     padding: 5px;
     background-color: black;
@@ -107,10 +110,13 @@ input:hover {
     left: 35%;
     transition: 350ms;
 }
-.add_website_button:hover{
+
+.add_website_button:hover {
     transform: scale(1.1);
 }
-.user_input1, .user_input2{
+
+.user_input1,
+.user_input2 {
     width: 150px;
     height: 20px;
     border: none;
@@ -118,10 +124,11 @@ input:hover {
     position: absolute;
     left: 50%;
 }
-.user_input1{
+
+.user_input1 {
     top: 50px;
 }
-.user_input2{
+
+.user_input2 {
     top: 90px;
-    
 }
