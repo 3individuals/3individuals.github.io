@@ -1,0 +1,3 @@
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/pedrouid/san-francisco-fonts.git
