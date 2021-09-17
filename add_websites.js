@@ -20,7 +20,14 @@ function add_website(){
             
             dock.style.width=dock.offsetWidth+60+"px";
             buttons[i].style.display="block";
+
+            if(i==buttons.length-2){
+                buttons[buttons.length-1].style.display="none";
+                break;
+            };
+
             break;
+
         };
     };
 }
