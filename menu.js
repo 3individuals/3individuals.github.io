@@ -1,9 +1,12 @@
 function menu_button() {
-    if (document.querySelector(".menu").style.display == "none") {
-        document.getElementById("menu_button").innerText = "close"
-        document.querySelector(".menu").style.display = "grid"
+    var menu_button=document.getElementById("menu_button");
+    var menu=document.querySelector(".menu");
+    
+    if (menu.style.display == "none") {
+        menu_button.innerText = "close";
+        menu.style.display = "grid";
     } else {
-        document.getElementById("menu_button").innerText = "menu"
-        document.querySelector(".menu").style.display = "none"
-    }
+        menu_button.innerText = "menu";
+        menu.style.display = "none";
+    };
 }
