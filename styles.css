@@ -140,3 +140,15 @@ input {
     top: 102px;
     font-size: 14px;
 }
+
+.remove{
+    width: 70px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(7px);
+}
