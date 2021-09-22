@@ -20,14 +20,22 @@ function add_website() {
 
             dock.style.width = dock.offsetWidth + 60 + "px";
             buttons[i].style.display = "block";
+            localStorage.setItem("button"+i,JSON.stringify({"name":document.getElementById("website_name").value,"url":document.getElementById("website_url")}))
+            check_dock()
+            break
 
-            if (i == buttons.length - 2) {
-                buttons[buttons.length - 1].style.display = "none";
+        };
+    };
+}
+
+function check_dock(){
+    buttons=document.querySelectorAll("#dock button");
+    for (var i = 0; i < buttons.length-1;i+=1){
+        if (buttons[i].style.display=="block"){
+            if (i==buttons.length-2){
+                buttons[buttons.length-1].style.display="none";
                 break;
             };
-
-            break;
-
         };
     };
 }
