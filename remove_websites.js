@@ -22,7 +22,7 @@ function remove() {
     }
     window.onclick = function () {
         remove.style.display = "none";
-    }
+    };
 }
 
 function check_dock() {
@@ -31,7 +31,7 @@ function check_dock() {
         if (button[i].style.display == "none") {
             button[button.length-1].style.display = "block";
             return;
-        }
-    }
+        };
+    };
     button[button.length-1].style.display="none";
 }
