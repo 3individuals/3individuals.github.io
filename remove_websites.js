@@ -29,7 +29,6 @@ function check_dock() {
     var button = document.querySelectorAll("#dock button");
     for (var i = 0; i < button.length - 1; i += 1) {
         if (button[i].style.display == "none") {
-            console.log(10);
             button[button.length-1].style.display = "block";
             return;
         }

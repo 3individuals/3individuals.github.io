@@ -20,7 +20,7 @@ function add_website() {
 
             dock.style.width = dock.offsetWidth + 60 + "px";
             buttons[i].style.display = "block";
-            localStorage.setItem("button"+i,JSON.stringify({"name":document.getElementById("website_name").value,"url":document.getElementById("website_url")}))
+            localStorage.setItem("button"+i,JSON.stringify({"name":document.getElementById("website_name").value,"url":document.getElementById("website_url").value}))
             check_dock()
             break
 
