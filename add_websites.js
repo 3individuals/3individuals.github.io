@@ -16,11 +16,16 @@ function add_website() {
     for (var i = 0; i < buttons.length - 1; i += 1) {
         if (buttons[i].style.display == "none") {
 
-            var dock = document.getElementById("dock");
-
-            dock.style.width = dock.offsetWidth + 60 + "px";
+            var box = document.getElementById("box");
+            if (i<4){
+                box.style.width = box.offsetWidth + 80 + "px";
+            }
+            if (i==4 || i==8){
+                box.style.height = box.offsetHeight+90+"px"
+            }
             buttons[i].style.display = "block";
             localStorage.setItem("button"+i,JSON.stringify({"name":document.getElementById("website_name").value,"url":document.getElementById("website_url").value}));
+            buttons[i].innerHTML=document.getElementById("website_name").value
             check_dock();
             break;
 

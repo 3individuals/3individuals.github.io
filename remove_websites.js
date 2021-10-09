@@ -1,7 +1,7 @@
 function remove() {
     var buttons = document.querySelector("#dock");
     var remove = document.getElementById("remove");
-    var dock = document.getElementById("dock");
+    var box = document.getElementById("box");
 
     buttons.oncontextmenu = function (button_click) {
         button_click.preventDefault();
@@ -10,7 +10,9 @@ function remove() {
                 remove.style.display = "block";
                 remove.onclick = function () {
                     button_click.target.style.display = "none";
-                    dock.style.width = dock.offsetWidth - 60 + "px";
+                    if (localStorage.length<=5){
+                        box.style.width = box.offsetWidth - 110 + "px";
+                    }
                     remove.style.display = "none";
                     localStorage.removeItem(button_click.target.id);
                     return check_dock();

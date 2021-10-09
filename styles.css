@@ -21,36 +21,42 @@ img {
 .clock {
     position: absolute;
     font-size: 7vh;
-    top: 45%;
+    top: 15%;
 }
 
 .dock {
-    bottom: 10px;
+    bottom: 300px;
     position: absolute;
-    width: 50px;
-    height: 70px;
-    background-color: black;
+    width: 500px;
+    height: 450px;
     border-radius: 10px;
-    opacity: 0.4;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: white;
 }
 
+#box{
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
 .websites {
     opacity: 1;
-    width: 40px;
+    width: 100px;
     height: 40px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
     border: none;
     transition: 350ms;
     font-size: 20px;
+    transform: scale(0.8);
 }
 
 .websites:hover {
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
 .menu_button {
