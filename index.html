@@ -38,17 +38,21 @@
         <button id="add_button" style="display: block; position: absolute; bottom: 10px;" class="websites fa fa-plus" onclick="add_website_button()"></button>
     </div>
     <div id="add_website_menu" class="add_website_menu">
-        <h5
-            style="position: absolute; top: 53px; left: 50px; color: rgba(200,200,200,1); font-weight: 500; font-size: medium;">
-            Enter website url:</h5>
-        <h5
-            style="position: absolute; top: 103px; left: 50px; color: rgba(200,200,200,1); font-weight: 500; font-size: medium;">
-            Enter website name:</h5>
+        <h5 style="position: absolute; top: 53px; left: 50px; color: rgba(200,200,200,1); font-weight: 500; font-size: medium;">Enter website url:</h5>
+        <h5 style="position: absolute; top: 103px; left: 50px; color: rgba(200,200,200,1); font-weight: 500; font-size: medium;">Enter website name:</h5>
+        
         <input id="website_url" class="user_input1" type="text">
         <input id="website_name" class="user_input2" type="text">
+            
         <button class="add_website_button" onclick="add_website()">Add website</button>
+
+        <h4 id="website_present" style="display: none; position: absolute; bottom: 10px;">Website already present</h4>
+        <h4 id="url_wrong" style="display: none; position: absolute; bottom: 10px;">The url enetered must contain 'https://'</h4>
+        <h4 id="input_empty" style="display: none; position: absolute; bottom: 10px;">The input fields must not be empty</h4>
     </div>
+    
     <button id="menu_button" class="menu_button" onclick="menu_button()">menu</button>
+    
     <div class="menu">
         <input type="image" src="walls/Ashim DSilva.jpg" alt="background 1" onclick="change_bg(src)">
         <input type="image" src="walls/Canazei Granite Ridges.jpg" alt="background 2" onclick="change_bg(src)">

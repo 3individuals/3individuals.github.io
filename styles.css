@@ -27,6 +27,7 @@ img {
 .dock {
     bottom: 300px;
     position: absolute;
+    top: 30%;
     width: 500px;
     height: 450px;
     border-radius: 10px;
@@ -99,13 +100,14 @@ input {
     display: none;
     position: absolute;
     width: 400px;
-    height: 200px;
+    height: 220px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 7px;
     color: teal;
     top: 25%;
     border-radius: 7px;
     backdrop-filter: blur(7px);
+    justify-content: center;
 }
 
 .add_website_button {
@@ -115,7 +117,7 @@ input {
     border-radius: 7px;
     border: none;
     color: rgb(200, 200, 200);
-    bottom: 10px;
+    bottom: 40px;
     left: 37%;
     transition: 350ms;
     font-weight: 500;
