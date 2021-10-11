@@ -20,8 +20,9 @@ img {
 
 .clock {
     position: absolute;
-    font-size: 7vh;
-    top: 15%;
+    font-size: 9vh;
+    font-weight: 600;
+    top: 10%;
 }
 
 .dock {
@@ -83,10 +84,10 @@ input {
 .menu {
     display: none;
     grid-template-columns: repeat(2, 130px);
-    grid-template-rows: repeat(8, 70px);
+    grid-template-rows: repeat(10, 70px);
     padding: 10px;
     width: 230px;
-    height: 540px;
+    height: 680px;
     background-color: rgba(0, 0, 0, 0.2);
     color: teal;
     position: absolute;

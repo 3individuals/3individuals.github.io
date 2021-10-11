@@ -2,8 +2,8 @@ window.onload=function(){
     var box=document.getElementById("box");
 
     if (localStorage.getItem("bg")==undefined){
-        document.getElementById("main_bg").src="walls/Mr. Lee.jpg";
-        localStorage.setItem("bg","walls/Mr. Lee.jpg")
+        document.getElementById("main_bg").src="walls/p39.png";
+        localStorage.setItem("bg","walls/p39.png")
     }else{
         document.getElementById("main_bg").src=localStorage.getItem("bg");
     };
