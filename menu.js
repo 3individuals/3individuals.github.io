@@ -6,7 +6,7 @@ function menu_button() {
         menu_button.innerText = "close";
         menu.style.display = "grid";
     } else {
-        menu_button.innerText = "menu";
+        menu_button.innerText = "backgrounds";
         menu.style.display = "none";
     };
 }

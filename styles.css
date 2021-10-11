@@ -158,6 +158,6 @@ input {
     bottom: 100px;
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     backdrop-filter: blur(7px);
 }

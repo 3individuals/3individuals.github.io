@@ -11,7 +11,7 @@ function remove() {
                 remove.onclick = function () {
                     button_click.target.style.display = "none";
                     if (localStorage.length<5){
-                        box.style.width = box.offsetWidth - 110 + "px";
+                        box.style.width = box.offsetWidth - 120 + "px";
                     }
                     remove.style.display = "none";
                     localStorage.removeItem(button_click.target.id);
