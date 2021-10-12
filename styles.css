@@ -12,9 +12,9 @@ body {
 
 
 img {
-    max-width: 2160px;
-    height: auto;
-    max-height: 3840px;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .clock {
