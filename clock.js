@@ -11,4 +11,4 @@ function time() {
     document.getElementById("clock").innerText = time;
 }
 
-setInterval(time, 1000)
+setTimeout(time, 1000)
