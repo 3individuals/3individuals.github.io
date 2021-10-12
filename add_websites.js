@@ -19,6 +19,9 @@ function add_website() {
     if (url.slice(url.length-1)!="/"){
         url+="/"
     }
+    if (url.includes("www.")==false){
+        url="https://www."+url.split('/')[2]+"/"
+    }
 
     if (check_input(url,name)=="u"){
         document.getElementById("website_present").style.display="block"
