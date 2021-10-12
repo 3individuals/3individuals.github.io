@@ -10,12 +10,11 @@ body {
     overflow: hidden;
 }
 
+
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-    width: 100%;
+    max-width: 2160px;
+    height: auto;
+    max-height: 3840px;
 }
 
 .clock {
@@ -38,7 +37,7 @@ img {
     color: white;
 }
 
-#box{
+#box {
     padding: 10px;
     border-radius: 10px;
     display: grid;
@@ -151,7 +150,7 @@ input {
     font-size: 14px;
 }
 
-.remove{
+.remove {
     width: 70px;
     height: 30px;
     display: none;
