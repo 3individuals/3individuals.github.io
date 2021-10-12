@@ -16,6 +16,10 @@ function add_website() {
     var url=document.getElementById("website_url").value
     var name=document.getElementById("website_name").value
     
+    if (url.slice(url.length-1)!="/"){
+        url+="/"
+    }
+
     if (check_input(url,name)=="u"){
         document.getElementById("website_present").style.display="block"
         return
