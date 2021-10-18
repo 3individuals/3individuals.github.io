@@ -14,7 +14,17 @@ function remove() {
                         box.style.width = box.offsetWidth - 120 + "px";
                     }
                     remove.style.display = "none";
-                    localStorage.removeItem(button_click.target.id);
+                    if (JSON.parse(localStorage.getItem("button")).length==1){
+                        localStorage.removeItem("button")
+                    }
+                    var button_list=JSON.parse(localStorage.getItem("button"))
+                    for (i in button_list){
+                        if (button_list[i]["id"]==button_click.target.id){
+                            button_list.splice(i,1)
+                            localStorage.setItem("button",JSON.stringify(button_list))
+                            break
+                        }
+                    }
                     return check_dock();
                 }
             } else {

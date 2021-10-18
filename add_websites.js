@@ -51,7 +51,15 @@ function add_website() {
                 box.style.height = box.offsetHeight+90+"px"
             }
             buttons[i].style.display = "block";
-            localStorage.setItem("button"+i,JSON.stringify({"name":name,"url":url}));
+            if (localStorage.getItem("button")==null){
+                localStorage.setItem("button",JSON.stringify([{"id":buttons[i].id,"name":name,"url":url}]));
+                break;
+            }
+
+            var button_list=JSON.parse(localStorage.getItem("button"))
+            button_list.push({"id":buttons[i].id,"name":name,"url":url})
+            localStorage.setItem("button",JSON.stringify(button_list))
+            
             buttons[i].innerHTML=name
             check_dock();
             break;
@@ -81,10 +89,9 @@ function check_input(url,name){
         return "h"
     };
 
-
-    for (var i=0;i<localStorage.length-1;i+=1){
-        if (localStorage.key(i)!="bg"){
-            if (url == JSON.parse(localStorage.getItem(localStorage.key(i)))["url"]){
+    if (localStorage.getItem("button")!=null){
+        for (var i=0;i<JSON.parse(localStorage.getItem("button")).length;i+=1){
+            if (url == JSON.parse(localStorage.getItem("button"))[i]["url"]){
                 return "u"
             };
         };

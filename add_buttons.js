@@ -12,20 +12,18 @@ window.onload=function(){
         document.getElementById("add_button").style.display="none";
     };
     
-    for (var i=0;i<localStorage.length;i+=1){
-        if (localStorage.key(i)!="bg"){
-
-            var button=document.getElementById(localStorage.key(i))
-
+    if (localStorage.getItem("button")!=null){
+        var buttons=document.querySelectorAll("#dock button")
+        for (var i=0;i<JSON.parse(localStorage.getItem("button")).length;i+=1){
+            var button=document.getElementById(buttons[i].id)
             if (i<5){
                 box.style.width=box.offsetWidth+80+"px"
             };
             if (i==5 || i==9){
                 box.style.height=box.offsetHeight+90+"px"
             }
-            box.style.columnGap="10px"
             button.style.display="block";
-            button.innerHTML=JSON.parse(localStorage.getItem(localStorage.key(i)))["name"]
-        };
+            button.innerHTML=JSON.parse(localStorage.getItem("button"))[i]["name"]
+            };
     };
 }
