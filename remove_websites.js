@@ -10,7 +10,7 @@ function remove() {
                 remove.style.display = "block";
                 remove.onclick = function () {
                     button_click.target.style.display = "none";
-                    if (localStorage.length<5){
+                    if (JSON.parse(localStorage.getItem("button")).length<5){
                         box.style.width = box.offsetWidth - 120 + "px";
                     }
                     remove.style.display = "none";
