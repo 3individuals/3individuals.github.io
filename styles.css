@@ -51,8 +51,9 @@ img {
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
     transition: 350ms;
-    font-size: 20px;
+    font-size: 19px;
     transform: scale(0.8);
+    font-weight: 500;
 }
 
 .websites:hover {
