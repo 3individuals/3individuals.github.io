@@ -1,163 +1,163 @@
 * {
-    margin: 0;
-    color: white;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "SF Pro Text", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: white;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "SF Pro Text",
+    Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
-
 img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .clock {
-    position: absolute;
-    font-size: 9vh;
-    font-weight: 600;
-    top: 10%;
+  position: absolute;
+  font-size: 9vh;
+  font-weight: 600;
+  top: 10%;
 }
 
 .dock {
-    bottom: 300px;
-    position: absolute;
-    top: 30%;
-    width: 500px;
-    height: 450px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
+  bottom: 300px;
+  position: absolute;
+  top: 30%;
+  width: 500px;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
 
 #box {
-    padding: 10px;
-    border-radius: 10px;
-    display: grid;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
 }
 
 .websites {
-    opacity: 1;
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    transition: 350ms;
-    font-size: 19px;
-    transform: scale(0.8);
-    font-weight: 500;
+  opacity: 1;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  transition: 350ms;
+  font-size: 19px;
+  transform: scale(0.8);
+  font-weight: 500;
 }
 
 .websites:hover {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .menu_button {
-    align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border-radius: 5px;
-    border: none;
-    color: rgba(255, 255, 255, 0.9);
-    padding: 7px;
-    font-weight: 500;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 7px;
+  font-weight: 500;
 }
 
 input {
-    width: 100px;
-    height: 50px;
-    border-radius: 7px;
-    transition: 350ms;
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  transition: 350ms;
 }
 
 .menu {
-    display: none;
-    grid-template-columns: repeat(2, 130px);
-    grid-template-rows: repeat(10, 70px);
-    padding: 10px;
-    width: 230px;
-    height: 680px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: teal;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    border-radius: 7px;
-    backdrop-filter: blur(7px);
+  display: none;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: repeat(10, 70px);
+  padding: 10px;
+  width: 230px;
+  height: 680px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: teal;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  border-radius: 7px;
+  backdrop-filter: blur(7px);
 }
 
 .add_website_menu {
-    display: none;
-    position: absolute;
-    width: 400px;
-    height: 220px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 7px;
-    color: teal;
-    top: 25%;
-    border-radius: 7px;
-    backdrop-filter: blur(7px);
-    justify-content: center;
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  color: teal;
+  top: 25%;
+  border-radius: 7px;
+  backdrop-filter: blur(7px);
+  justify-content: center;
 }
 
 .add_website_button {
-    position: absolute;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
-    border: none;
-    color: rgb(200, 200, 200);
-    bottom: 40px;
-    left: 37%;
-    transition: 350ms;
-    font-weight: 500;
-    font-size: medium;
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  border: none;
+  color: rgb(200, 200, 200);
+  bottom: 40px;
+  left: 37%;
+  transition: 350ms;
+  font-weight: 500;
+  font-size: medium;
 }
 
 .add_website_button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .user_input1,
 .user_input2 {
-    width: 150px;
-    height: 20px;
-    border: none;
-    padding-left: 8px;
-    color: rgb(200, 200, 200);
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    left: 52%;
+  width: 150px;
+  height: 20px;
+  border: none;
+  padding-left: 8px;
+  color: rgb(200, 200, 200);
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 52%;
 }
 
 .user_input1 {
-    top: 52px;
-    font-size: 14px;
+  top: 52px;
+  font-size: 14px;
 }
 
 .user_input2 {
-    top: 102px;
-    font-size: 14px;
+  top: 102px;
+  font-size: 14px;
 }
 
 .remove {
-    width: 70px;
-    height: 30px;
-    display: none;
-    position: absolute;
-    bottom: 100px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 8px;
-    backdrop-filter: blur(7px);
+  width: 70px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 8px;
+  backdrop-filter: blur(7px);
 }
