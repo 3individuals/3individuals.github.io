@@ -43,12 +43,11 @@ function add_website() {
                 box.style.height = box.offsetHeight + 90 + "px"
             }
             buttons[i].style.display = "block";
-            if (localStorage.getItem("button") == null) {
-                localStorage.setItem("button", JSON.stringify([{ "id": buttons[i].id, "name": name, "url": url }]));
-                break;
-            }
 
             var button_list = JSON.parse(localStorage.getItem("button"))
+            if (button_list == null) {
+                button_list = []
+            }
             button_list.push({ "id": buttons[i].id, "name": name, "url": url })
             localStorage.setItem("button", JSON.stringify(button_list))
 
