@@ -13,13 +13,14 @@ window.onload=function(){
     };
     
     if (localStorage.getItem("button")!=null){
+        add_column()
         var buttons=document.querySelectorAll("#dock button")
         for (var i=0;i<JSON.parse(localStorage.getItem("button")).length;i+=1){
             var button=document.getElementById(buttons[i].id)
-            if (i<5){
+            if (i<4){
                 box.style.width=box.offsetWidth+80+"px"
             };
-            if (i==5 || i==9){
+            if (i==4 || i==8){
                 box.style.height=box.offsetHeight+90+"px"
             }
             button.style.display="block";

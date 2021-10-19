@@ -60,6 +60,10 @@ function add_website() {
             button_list.push({"id":buttons[i].id,"name":name,"url":url})
             localStorage.setItem("button",JSON.stringify(button_list))
             
+            if (JSON.parse(localStorage.getItem("button")).length<5){
+                add_column()
+            }
+
             buttons[i].innerHTML=name
             check_dock();
             break;
