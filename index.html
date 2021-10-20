@@ -15,12 +15,14 @@
     <script src="add_buttons.js"></script>
     <script src="open_website.js"></script>
     <script src="grid_layout.js"></script>
+    <script src="search_bar.js"></script>
 
 </head>
 
 <body>
     <img id="main_bg">
     <div id="clock" class="clock"></div>
+    <input type="text" id="search_bar" placeholder="What do you want to search?" onclick="to_search()">
     <div id="dock" class="dock" oncontextmenu="remove()">
         <div id="box">
             <button id="button0" style="display: none;" class="websites" onclick="open_website(id)"></button>
