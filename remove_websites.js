@@ -8,6 +8,8 @@ function remove() {
         if (button_click.currentTarget != button_click.target && button_click.target.id != "add_button") {
             if (remove.style.display == "none") {
                 remove.style.display = "block";
+                remove.style.left = button_click.target.offsetLeft + 780 + "px"
+                remove.style.top = button_click.target.offsetTop + 290 + "px"
                 remove.onclick = function () {
                     var buttons_count = JSON.parse(localStorage.getItem("button")).length
                     button_click.target.style.display = "none";
