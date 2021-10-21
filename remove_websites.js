@@ -5,7 +5,7 @@ function remove() {
 
     buttons.oncontextmenu = function (button_click) {
         button_click.preventDefault();
-        if (button_click.currentTarget != button_click.target && button_click.target.id != "add_button") {
+        if (button_click.currentTarget != button_click.target && button_click.target.id != "add_button" && button_click.target.id != "box") {
             if (remove.style.display == "none") {
                 remove.style.display = "block";
                 remove.style.left = button_click.target.offsetLeft + 780 + "px"
