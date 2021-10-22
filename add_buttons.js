@@ -8,9 +8,9 @@ window.onload = function () {
         document.getElementById("main_bg").src = localStorage.getItem("bg");
     };
 
-    check_box()
 
     if (localStorage.getItem("button") != null) {
+        check_box()
         add_column()
         var buttons = document.querySelectorAll("#outer_box button")
         for (var i = 0; i < JSON.parse(localStorage.getItem("button")).length; i += 1) {
