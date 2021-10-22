@@ -30,7 +30,7 @@ function add_website() {
 
     document.getElementById("add_website_menu").style.display = "none";
 
-    var buttons = document.querySelectorAll("#dock button");
+    var buttons = document.querySelectorAll("#outer_box button");
 
     for (var i = 0; i < buttons.length - 1; i += 1) {
         if (buttons[i].style.display == "none") {
@@ -40,7 +40,7 @@ function add_website() {
                 box.style.width = box.offsetWidth + 80 + "px";
             }
             if (i == 4 || i == 8) {
-                box.style.height = box.offsetHeight + 90 + "px"
+                box.style.height = box.offsetHeight + 70 + "px"
             }
             buttons[i].style.display = "block";
 
@@ -64,7 +64,7 @@ function add_website() {
 }
 
 function check_dock() {
-    buttons = document.querySelectorAll("#dock button");
+    buttons = document.querySelectorAll("#outer_box button");
     for (var i = 0; i < buttons.length - 1; i += 1) {
         if (buttons[i].style.display == "block") {
             if (i == buttons.length - 2) {

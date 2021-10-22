@@ -1,5 +1,5 @@
 function remove() {
-    var buttons = document.querySelector("#dock");
+    var buttons = document.querySelector("#outer_box");
     var remove = document.getElementById("remove");
     var box = document.getElementById("box");
 
@@ -47,7 +47,7 @@ function remove() {
 }
 
 function check_dock() {
-    var button = document.querySelectorAll("#dock button");
+    var button = document.querySelectorAll("#outer_box button");
     for (var i = 0; i < button.length - 1; i += 1) {
         if (button[i].style.display == "none") {
             button[button.length - 1].style.display = "block";

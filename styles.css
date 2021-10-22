@@ -37,12 +37,12 @@ img {
   border-radius: 10px;
 }
 
-.dock {
+.outer_box {
   bottom: 300px;
   position: absolute;
   top: 30%;
   width: 500px;
-  height: 450px;
+  height: 350px;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
