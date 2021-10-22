@@ -3,6 +3,10 @@ function add_website_button() {
 
     if (add_website_menu.style.display == "none") {
         add_website_menu.style.display = "flex";
+
+        document.getElementById("website_url").value = null
+        document.getElementById("website_name").value = null
+
     } else {
         add_website_menu.style.display = "none";
     };
