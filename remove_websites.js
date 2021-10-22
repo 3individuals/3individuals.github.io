@@ -8,8 +8,15 @@ function remove() {
         if (button_click.currentTarget != button_click.target && button_click.target.id != "add_button" && button_click.target.id != "box") {
             if (remove.style.display == "none") {
                 remove.style.display = "block";
-                remove.style.left = button_click.target.offsetLeft + 780 + "px"
-                remove.style.top = button_click.target.offsetTop + 290 + "px"
+                remove.style.left = button_click.clientX + "px"
+                remove.style.top = button_click.clientY + "px"
+
+                button_click.target.addEventListener("mouseout", function () {
+                    setTimeout(function () {
+                        remove.style.display = "none"
+                    }, 3000)
+                })
+
                 remove.onclick = function () {
                     var buttons_count = JSON.parse(localStorage.getItem("button")).length
                     button_click.target.style.display = "none";
@@ -34,7 +41,7 @@ function remove() {
                     if (buttons_count < 4) {
                         delete_column()
                     }
-                    return check_dock();
+                    return check_box();
                 }
             } else {
                 remove.style.display = "none";
@@ -44,15 +51,4 @@ function remove() {
     window.onclick = function () {
         remove.style.display = "none";
     };
-}
-
-function check_dock() {
-    var button = document.querySelectorAll("#outer_box button");
-    for (var i = 0; i < button.length - 1; i += 1) {
-        if (button[i].style.display == "none") {
-            button[button.length - 1].style.display = "block";
-            return;
-        };
-    };
-    button[button.length - 1].style.display = "none";
 }

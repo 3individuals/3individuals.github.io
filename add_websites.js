@@ -56,21 +56,9 @@ function add_website() {
             }
 
             buttons[i].innerHTML = name
-            check_dock();
+            check_box();
             break;
 
-        };
-    };
-}
-
-function check_dock() {
-    buttons = document.querySelectorAll("#outer_box button");
-    for (var i = 0; i < buttons.length - 1; i += 1) {
-        if (buttons[i].style.display == "block") {
-            if (i == buttons.length - 2) {
-                buttons[buttons.length - 1].style.display = "none";
-                break;
-            };
         };
     };
 }

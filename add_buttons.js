@@ -8,9 +8,7 @@ window.onload = function () {
         document.getElementById("main_bg").src = localStorage.getItem("bg");
     };
 
-    if (localStorage.length == document.querySelectorAll("#outer_box button").length) {
-        document.getElementById("add_button").style.display = "none";
-    };
+    check_box()
 
     if (localStorage.getItem("button") != null) {
         add_column()
