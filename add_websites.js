@@ -9,25 +9,20 @@ function add_website_button() {
   } else {
     add_website_menu.style.display = "none";
   }
+  document.getElementById("website_present").style.display = "none";
+  document.getElementById("input_empty").style.display = "none";
+  document.getElementById("char_length").style.display = "none";
 }
 
 function add_website() {
   document.getElementById("website_present").style.display = "none";
-  document.getElementById("url_wrong").style.display = "none";
   document.getElementById("input_empty").style.display = "none";
   document.getElementById("char_length").style.display = "none";
 
   var url = document.getElementById("website_url").value;
   var name = document.getElementById("website_name").value;
 
-  if (url.slice(url.length - 1) != "/") {
-    url += "/";
-  }
-  if (url.includes("www.") == false) {
-    url = "https://www." + url.split("/")[2] + "/";
-  }
-
-  if (check_input(url, name) == 1) {
+  if (check_input(url.toLowerCase(), name) == 1) {
     return;
   }
 
@@ -50,7 +45,7 @@ function add_website() {
       if (button_list == null) {
         button_list = [];
       }
-      button_list.push({ id: buttons[i].id, name: name, url: url });
+      button_list.push({ id: buttons[i].id, name: name, url: url.toLowerCase() });
       localStorage.setItem("button", JSON.stringify(button_list));
 
       if (JSON.parse(localStorage.getItem("button")).length < 5) {
@@ -71,11 +66,6 @@ function check_input(url, name) {
   }
   if (name.replace(" ", "").length == 0 || url.replace(" ", "").length == 0) {
     document.getElementById("input_empty").style.display = "block";
-    return 1;
-  }
-
-  if ((url.includes("https://") || url.includes("http://")) == false) {
-    document.getElementById("url_wrong").style.display = "block";
     return 1;
   }
 
