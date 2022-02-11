@@ -1,8 +1,8 @@
-function check_box() {
+function check_box(){
   var button = document.getElementById("add_button");
-  if (JSON.parse(localStorage.getItem("button")).length == 12) {
+  if (JSON.parse(localStorage.getItem("button")).length == 12){
     button.style.display = "none";
-  } else {
+  } else{
     button.style.display = "block";
   }
 }
