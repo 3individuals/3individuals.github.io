@@ -32,13 +32,6 @@ function add_website(){
 
   for (var i = 0;i < buttons.length - 1;i += 1){
     if (buttons[i].style.display == "none"){
-      var box = document.getElementById("box");
-      if (i < 4){
-        box.style.width = box.offsetWidth + 80 + "px";
-      }
-      if (i == 4 || i == 8){
-        box.style.height = box.offsetHeight + 70 + "px";
-      }
       buttons[i].style.display = "block";
 
       var button_list = JSON.parse(localStorage.getItem("button"));
@@ -53,6 +46,7 @@ function add_website(){
       }
 
       buttons[i].innerHTML = name;
+      buttons[i].setAttribute("onclick","window.open('" + JSON.parse(localStorage.getItem("button"))[i]["url"] + "')")
       check_box();
       break;
     }

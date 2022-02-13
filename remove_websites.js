@@ -1,7 +1,6 @@
 function remove(){
   var buttons = document.querySelector("#outer_box");
   var remove = document.getElementById("remove");
-  var box = document.getElementById("box");
 
   buttons.oncontextmenu = function (button_click){
     button_click.preventDefault();
@@ -20,12 +19,6 @@ function remove(){
         remove.onclick = function (){
           var buttons_count = JSON.parse(localStorage.getItem("button")).length;
           button_click.target.style.display = "none";
-          if (buttons_count < 5){
-            box.style.width = box.offsetWidth - 120 + "px";
-          }
-          if (buttons_count == 5 || JSON.parse(localStorage.getItem("button")).length == 9){
-            box.style.height = box.offsetHeight - 90 + "px";
-          }
           remove.style.display = "none";
           if (buttons_count == 1){
             localStorage.removeItem("button");
