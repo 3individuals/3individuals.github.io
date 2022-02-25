@@ -28,6 +28,7 @@ img {
   position: absolute;
   bottom: 15%;
   width: 500px;
+  height: 50px;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   font-weight: 500;
@@ -38,7 +39,7 @@ img {
   backdrop-filter: blur(7px);
 }
 
-::placeholder {
+#search_bar::placeholder {
   color: white;
   opacity: 1;
 }
@@ -46,7 +47,7 @@ img {
 .outer_box {
   bottom: 300px;
   position: absolute;
-  top: 20%;
+  bottom: 30%;
   width: 500px;
   height: 350px;
   border-radius: 10px;
@@ -154,6 +155,7 @@ input {
   width: 150px;
   height: 20px;
   border: none;
+  border-radius: 7px;
   padding-left: 8px;
   color: rgb(200, 200, 200);
   background-color: rgba(0, 0, 0, 0.2);
