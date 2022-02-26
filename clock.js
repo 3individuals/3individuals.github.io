@@ -1,15 +1,16 @@
 function time(){
-  let date = new Date();
-  let hh = date.getHours();
-  let mm = date.getMinutes();
+  var clock = document.getElementById("clock");
+  var date = new Date;
+  var hour = date.getHours();
+  var minute = date.getMinutes();
 
-  hh = hh < 10 ? "0" + hh : hh;
-  mm = mm < 10 ? "0" + mm : mm;
+  if (hour < 10){
+    hour = "0" + hour;
+  }else if (minute < 10){
+    minute = "0" + minute
+  }
 
-  let time = hh + ":" + mm;
-
-  document.getElementById("clock").innerText = time;
-  await sleep(30000);
+  clock.innerHTML = hour + ":" + minute;
 }
 
-time()
+setInterval(time,1000);
