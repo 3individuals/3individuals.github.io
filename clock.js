@@ -9,7 +9,7 @@ function time(){
   let time = hh + ":" + mm;
 
   document.getElementById("clock").innerText = time;
-  await sleep(30000)
+  await sleep(30000);
 }
 
 time()
