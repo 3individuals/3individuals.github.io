@@ -1,7 +1,7 @@
 window.onload = function (){
   if (localStorage.getItem("bg") == undefined){
-    document.getElementById("main_bg").src = "walls/pexels-roberto-nickson-2559941.jpg";
-    localStorage.setItem("bg", "walls/pexels-roberto-nickson-2559941.jpg");
+    document.getElementById("main_bg").src = "https://raw.githubusercontent.com/3individuals/wallpapers/main/brown/pexels-roberto-nickson-2559941.jpg";
+    localStorage.setItem("bg", "https://raw.githubusercontent.com/3individuals/wallpapers/main/brown/pexels-roberto-nickson-2559941.jpg");
   } else{
     document.getElementById("main_bg").src = localStorage.getItem("bg");
   }

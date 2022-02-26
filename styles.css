@@ -73,7 +73,7 @@ img {
   transition: 350ms;
   font-size: 19px;
   transform: scale(0.8);
-  font-weight: 500;
+  font-weight: 600;
   backdrop-filter: blur(7px);
 }
 
@@ -98,22 +98,40 @@ img {
 input {
   width: 100px;
   height: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   transition: 350ms;
+  font-size: larger;
+  font-weight: 600;
+}
+
+input:hover{
+  transform: scale(1.1);
+}
+
+#walls{
+  right: 280px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#walls::-webkit-scrollbar{
+  display: none;
 }
 
 .menu {
   display: none;
   grid-template-columns: repeat(2, 130px);
-  grid-template-rows: repeat(10, 70px);
+  grid-template-rows: repeat(5, 70px);
   padding: 10px;
   width: 230px;
-  height: 680px;
+  height: 330px;
   background-color: rgba(0, 0, 0, 0.2);
   color: teal;
   position: absolute;
   top: 50px;
-  right: 20px;
+  right: 15px;
   border-radius: 7px;
   backdrop-filter: blur(7px);
 }
