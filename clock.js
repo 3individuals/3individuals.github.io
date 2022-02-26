@@ -1,4 +1,4 @@
-function time() {
+function time(){
   let date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
@@ -7,9 +7,9 @@ function time() {
   mm = mm < 10 ? "0" + mm : mm;
 
   let time = hh + ":" + mm;
-   
-  document.getElementById("clock").innerText = time; 
-  setTimeout{time, 30000);
+
+  document.getElementById("clock").innerText = time;
+  await sleep(30000)
 }
 
-time();
+time()
