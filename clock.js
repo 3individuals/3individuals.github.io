@@ -9,6 +9,7 @@ function time(){
   let time = hh + ":" + mm;
 
   document.getElementById("clock").innerText = time;
+  setTimeout(time, 30000);
 }
 
-setTimeout(time, 1000);
+time();
