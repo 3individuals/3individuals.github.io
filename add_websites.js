@@ -28,29 +28,16 @@ function add_website(){
 
   document.getElementById("add_website_menu").style.display = "none";
 
-  var buttons = document.querySelectorAll("#outer_box button");
-
-  for (var i = 0;i < buttons.length - 1;i += 1){
-    if (buttons[i].style.display == "none"){
-      buttons[i].style.display = "block";
-
       var button_list = JSON.parse(localStorage.getItem("button"));
       if (button_list == null){
         button_list = [];
       }
-      button_list.push({ id: buttons[i].id, name: name, url: url.toLowerCase()});
+      button_list.push({ id: url, name: name, url: url.toLowerCase()});
       localStorage.setItem("button", JSON.stringify(button_list));
 
-      if (JSON.parse(localStorage.getItem("button")).length < 5){
-        add_column();
-      }
+      create_buttons(0,url,name);
 
-      buttons[i].innerHTML = name;
-      buttons[i].setAttribute("onclick","window.open('" + JSON.parse(localStorage.getItem("button"))[i]["url"] + "')")
       check_box();
-      break;
-    }
-  }
 }
 
 function check_input(url, name){
@@ -71,4 +58,18 @@ function check_input(url, name){
       }
     }
   }
+}
+
+function create_buttons(index=0,website="",website_name=""){
+  var button=document.createElement("button");
+  if (website!=""){
+    button.id=website;
+    button.innerText=website_name;
+  }else{
+    button.id=JSON.parse(localStorage.getItem("button"))[index]["url"];
+    button.innerText=JSON.parse(localStorage.getItem("button"))[index]["name"];
+  }
+  button.setAttribute("onclick","window.open('" + button.id + "')");
+  button.className="websites"
+  document.getElementById("box").append(button);
 }

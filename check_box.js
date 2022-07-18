@@ -3,6 +3,6 @@ function check_box(){
   if (JSON.parse(localStorage.getItem("button")).length == 12){
     button.style.display = "none";
   } else{
-    button.style.display = "block";
+    shrink_outer_box();
   }
 }

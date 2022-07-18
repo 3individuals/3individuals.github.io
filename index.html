@@ -11,32 +11,21 @@
     <script src="change_background.js"></script>
     <script src="add_websites.js"></script>
     <script src="remove_websites.js"></script>
-    <script src="add_buttons.js"></script>
+    <script src="start.js"></script>
     <script src="open_website.js"></script>
     <script src="grid_layout.js"></script>
     <script src="search_bar.js"></script>
     <script src="check_box.js"></script>
+    <script src="bookmarks.js"></script>
   </head>
 
   <body>
     <img id="main_bg" />
     <div id="clock" class="clock"></div>
     <input type="text" id="search_bar" placeholder="What do you want to search?" onclick="to_search()"/>
-    <div id="outer_box" class="outer_box" oncontextmenu="remove()">
-      <div id="box">
-        <button id="button0" style="display: none" class="websites"></button>
-        <button id="button1" style="display: none" class="websites"></button>
-        <button id="button2" style="display: none" class="websites"></button>
-        <button id="button3" style="display: none" class="websites"></button>
-        <button id="button4" style="display: none" class="websites"></button>
-        <button id="button5" style="display: none" class="websites"></button>
-        <button id="button6" style="display: none" class="websites"></button>
-        <button id="button7" style="display: none" class="websites"></button>
-        <button id="button8" style="display: none" class="websites"></button>
-        <button id="button9" style="display: none" class="websites"></button>
-        <button id="button10" style="display: none" class="websites"></button>
-        <button id="button11" style="display: none" class="websites"></button>
-      </div>
+    <div id="outer_box" class="outer_box" oncontextmenu="remove()" onmouseenter="expand_outer_box()" onmouseleave="shrink_outer_box()">
+      <h3 id="bookmark_title" style="writing-mode: vertical-lr; transform: rotate(180deg);">bookmarks</h3>
+      <div id="box"></div>
       <button id="add_button" style="display: block; position: absolute; bottom: 10px; font-size: xx-large; font-weight: 600;" class="websites" onclick="add_website_button()">+</button>
     </div>
 

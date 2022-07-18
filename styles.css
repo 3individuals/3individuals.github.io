@@ -45,22 +45,21 @@ img {
 }
 
 .outer_box {
-  bottom: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
-  bottom: 30%;
-  width: 500px;
-  height: 350px;
-  border-radius: 10px;
+  left: 0;
+  width: 40px;
+  height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: white;
+  transition: 400ms;
+  backdrop-filter: blur(7px);
 }
 
-#box {
-  padding: 10px;
-  border-radius: 10px;
-  display: grid;
+.outer_box:hover{
+  width: 100px;
 }
 
 .websites {
